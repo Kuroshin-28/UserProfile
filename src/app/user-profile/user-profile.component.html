@@ -1,0 +1,8 @@
+<div>
+    <img [src]="user.imgProfile" [alt]="user.firstname" />
+    <p>Hello, {{user.firstname}} {{user.lastname}} !</p>
+    <p [hidden]="user.ageVisible">Age : {{user.age}}</p>
+    <button (click)="user.isAgeVisible()">Display / Hide age</button>
+    <button (click)="user.sayHello()">Hello, mine-turtle !</button>
+    <input type="text" [(ngModel)]="user.lastname">
+</div>
